@@ -107,7 +107,8 @@ def Display_Employees():
         print("Employee id :", i[0])
         print("Employee Name :",i[1])
         print("Employee Post :", i[2])
-        print("........................................\.................\....................")
+        print("Employee salary :",i[3])
+        print("                                                                ")
     menu()
     #menu function.
 def menu():
