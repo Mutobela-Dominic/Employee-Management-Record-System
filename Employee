@@ -1,0 +1,7 @@
+import mysql.connector
+con = mysql.connector.connect(
+    host="localhost",user="root",password="@mr.domi.",database="Employee")
+
+def check_employee(Employee_id):
+#query to select arr rows of employees table
+    sql = 'select * from employees where id=%s'
