@@ -17,7 +17,7 @@ def Add_Employee():
     else:
         Name = input("Enter Employee Name :")
         Post = input("Enter Employee Post :")
-        salary = input("Eter Employee salary :")
+        salary = input("Enter Employee salary :")
         data = (id, Name, Post, salary)
         
     #insert employee details into employees table.
@@ -101,13 +101,13 @@ def Display_Employees():
     c.execute(sql)
     #fetch all details of all employees.
     r = c.fetchall()
-    print(f"This the value of r:{r} ")
-    #print(f"length of r r:{len(r)} ")
-    for i in r:
-        print("Employee id :", i[0])
-        print("Employee Name :",i[1])
-        print("Employee Post :", i[2])
-        print("........................................\.................\....................")
+    print("........................................\.................\....................")
+    print("\n         \t All Employees         \n")
+    print("ID\t\tName\t\tPost\t\tSalary ")
+    for i  in r:
+        print(f"{i[0]}\t{i[1]}\t{i[2]}\t\t{i[3]}")
+        print()
+        
     menu()
     #menu function.
 def menu():
