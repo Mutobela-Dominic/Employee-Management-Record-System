@@ -101,13 +101,18 @@ def Display_Employees():
     c.execute(sql)
     #fetch all details of all employees.
     r = c.fetchall()
-    print("........................................\.................\....................")
-    print("\n         \t All Employees         \n")
-    print("ID\t\tName\t\tPost\t\tSalary ")
-    for i  in r:
-        print(f"{i[0]}\t{i[1]}\t{i[2]}\t\t{i[3]}")
-        print()
-        
+    # print("........................................\.................\....................")
+    # print("\n         \t All Employees         \n")
+    # print("ID\t\tName\t\tPost\t\tSalary ")
+    # for i  in r:
+    #     print(f"{i[0]}\t{i[1]}\t{i[2]}\t\t{i[3]}")
+    #     print()
+    for i in r:
+        print("Employee id :", i[0])
+        print("Employee Name :",i[1])
+        print("Employee Post :", i[2])
+        print("Employee salary :",i[3])
+        print("                                                                ")
     menu()
     #menu function.
 def menu():
